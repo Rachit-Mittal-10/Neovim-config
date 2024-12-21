@@ -8,5 +8,18 @@ return {
 	config = function()
 		vim.keymap.set("n", "<leader>nt", ":Neotree toggle<CR>", { desc = "Neotree Filesystem", silent = true })
 		vim.keymap.set("n", "<leader>nf", ":Neotree focus<CR>", { desc = "Neotree focus", silent = true })
-	end,
+        require("neo-tree").setup({
+            filesystem = {
+                filtered_items = {
+                    hide_dotfiles = false,
+                    hide_gitignore = false,
+                    hide_by_name = {
+                        ".",
+                        "..",
+                        ".git"
+                    }
+                }
+            }
+        })
+	end
 }
