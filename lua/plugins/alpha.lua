@@ -28,11 +28,11 @@ return {
     }
     dashboard.section.buttons.val = {
         dashboard.button( "e", "New file" , ":ene <BAR> startinsert <CR>"),
-        dashboard.button("SPC f f", "Find Files", ":Telescope find_files<CR>"),
-        dashboard.button("SPC f g", "Live Grep",":Telescope live_grep<CR>"),
-        dashboard.button("SPC n t", "Show Neotree",":Neotree toggle<CR>"),
-        dashboard.button("SPC r m","Show Macros",":Telescope registers<CR>"),
-        dashboard.button("t","Show Terminal",":below split | terminal<CR>"),
+        dashboard.button("SPC ff", "Find Files", ":Telescope find_files<CR>"),
+        dashboard.button("SPC fg", "Live Grep",":Telescope live_grep<CR>"),
+        dashboard.button("SPC nt", "Show Neotree",":Neotree toggle<CR>"),
+        dashboard.button("SPC rm","Show Macros",":Telescope registers<CR>"),
+        dashboard.button("tt","Show Terminal",":below split | terminal<CR>"),
         dashboard.button("q", "Quit", ":qa<CR>")
     }
     dashboard.section.header.opts.hl = "AlphaHeader"
