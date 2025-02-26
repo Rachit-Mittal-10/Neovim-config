@@ -16,5 +16,8 @@ vim.keymap.set('n', 'tt', ':below split | terminal<CR>', {desc="Open the Termina
 -- New File Shortcut
 vim.keymap.set('n', 'e', ":ene <BAR> startinsert <CR>", {desc="New File", silent=true})
 
+-- Tab shortcut
+vim.keymap.set('n','<C-Tab>',":bnext<CR>",{desc="Tab Further", silent=true})
+vim.keymap.set('n','<S-Tab>',":bprev<CR>",{desc="Tab Previous", silent=true})
 
 return {}
