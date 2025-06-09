@@ -11,7 +11,7 @@ vim.keymap.set('n', '<C-u>', '<<', {desc='Un-indent the line', silent=true})
 vim.keymap.set('n', 'q', ':qa<CR>', {desc = 'Quit', silent=true})
 
 -- Terminal Shortcut
-vim.keymap.set('n', 'tt', ':below split | terminal<CR> | i<CR>', {desc="Open the Terminal in bottom half", silent=true})
+vim.keymap.set('n', 'tt', ':terminal<CR> | i<CR>', {desc="Open the Terminal in bottom half", silent=true})
 vim.keymap.set('t','<C-d>',[[<C-\><C-n>]],{desc="Close the terminal",silent=true})
 -- New File Shortcut
 vim.keymap.set('n', 'e', ":ene <BAR> startinsert <CR>", {desc="New File", silent=true})
