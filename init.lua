@@ -6,4 +6,6 @@ vim.opt.shiftwidth=4
 vim.opt.number=true
 vim.opt.relativenumber=true
 vim.opt.termguicolors=true
+vim.opt.shell="/bin/zsh"
+vim.opt.clipboard="unnamedplus"
 require("config.lazy")
